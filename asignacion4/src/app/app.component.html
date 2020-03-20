@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-12">
+    <app-game-control (juegoIniciado)="onEventoDisparado($event)"></app-game-control>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <app-odd *ngFor= "let numeroOdd of oddNumber" [number]="numeroOdd"></app-odd>
+    <app-even *ngFor= "let numeroEven of evenNumber" [number]="numeroEven"></app-even>
+  </div>
+</div>

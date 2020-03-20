@@ -1,0 +1,16 @@
+<a href="#"
+class='list-group-item clearfix'
+(click)="onSelected()">
+  <div  class="pull-left">
+    <h4 class='list-group-item-heading'>Nombre Receta: {{ receta.name }}</h4>
+    <p class="list-group-item-text">Descripcion: {{ receta.description }}</p>
+  </div>
+  <span class='pull-right'>
+    <!-- src= '{{ receta.imagePath }}' -->
+    <img
+    [src]="receta.imagePath"
+    alt="{{ receta.name }}"
+    class="img-responsive"
+    style="max-height: 50px;">
+  </span>
+</a>
